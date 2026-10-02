@@ -1,14 +1,20 @@
-import HeaderComponent from './components/HeaderComponent'
-import SectionComponent from './components/SectionComponent'
-import FooterComponent from './components/FooterComponent'
+import { Routes, Route } from 'react-router-dom'
+import Navbar from './components/Navbar'
+import Home from './components/Home'
+import About from './components/About'
+import Contact from './components/Contact'
 import './App.css'
 
 function App() {
   return (
+    
     <div className="app">
-      <HeaderComponent />
-      <SectionComponent />
-      <FooterComponent />
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
     </div>
   )
 }

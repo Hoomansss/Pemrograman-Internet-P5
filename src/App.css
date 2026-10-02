@@ -7,6 +7,36 @@ body {
   font-family: system-ui, -apple-system, sans-serif;
 }
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  padding: 12px 20px;
+  background-color: #ffffff;
+  border-radius: 999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  flex-wrap: wrap;
+}
+
+.navbar a {
+  padding: 8px 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: #1e3a8a;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: #eef2ff;
+}
+
+.navbar a.active {
+  background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+  color: #ffffff;
+}
+
 #root {
   min-height: 100vh;
 }
@@ -88,6 +118,15 @@ p {
   color: #444;
 }
 
+
+.hobbies img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-right: 12px;
+
+}
 .bio img {
   width: 200px;
   height: 200px;
